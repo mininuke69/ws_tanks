@@ -1,10 +1,8 @@
 from websockets.sync.client import connect
 from json import loads
 from json import dumps
-from time import sleep
 from typing import List
 from time import perf_counter
-from random import randint
 
 
 # own library, used by both client and server
@@ -12,7 +10,6 @@ from shared import Player
 from shared import Rect
 from shared import Vector
 from shared import GameObject
-from shared import Settings
 
 class Client:
     def __init__(self, ws_url="ws://localhost:8818") -> None:
