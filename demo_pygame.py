@@ -56,8 +56,8 @@ while running:
             
             key = ev.dict["key"]
         
-            movement_dir.y += (key == K_w)
-            movement_dir.y -= (key == K_s)
+            movement_dir.y -= (key == K_w)
+            movement_dir.y += (key == K_s)
             movement_dir.x += (key == K_d)
             movement_dir.x -= (key == K_a)
 
@@ -65,8 +65,8 @@ while running:
 
             key = ev.dict["key"]
 
-            movement_dir.y -= (key == K_w)
-            movement_dir.y += (key == K_s)
+            movement_dir.y += (key == K_w)
+            movement_dir.y -= (key == K_s)
             movement_dir.x -= (key == K_d)
             movement_dir.x += (key == K_a)
 
