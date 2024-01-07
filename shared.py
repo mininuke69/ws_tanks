@@ -63,6 +63,8 @@ class Vector:
 
     @property
     def normalized(self):
+        if self.magnitude == 0:
+            return Vector(0, 0)
         return Vector(
             x=self.x / self.magnitude,
             y=self.y / self.magnitude
