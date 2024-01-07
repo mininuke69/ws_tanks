@@ -141,7 +141,8 @@ async def handler(websocket: WebSocketServerProtocol):
 
     finally:
         # player disconnects using .close()
-        players.pop(token)
+        # players.pop(token)
+        pass
 
 def collide_walls(rect: Rect):
     for wall in game_map:
