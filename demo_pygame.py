@@ -98,8 +98,6 @@ while running:
             game_object_surface.fill((10, 10, 10)) if game_object.player == client.player.nick else game_object_surface.fill((220, 50, 50))
             screen.blit(game_object_surface, (game_object.rect.x - client.player.x + Settings.bullet_size / 2 + WIDTH / 2, game_object.rect.y - client.player.y + Settings.bullet_size / 2 + HEIGHT / 2))
     
-    test = Surface((2, 2))
-    screen.blit(test, (WIDTH / 2 - 1, HEIGHT / 2 - 1))
     display.flip()
 
     clock.tick(60)
